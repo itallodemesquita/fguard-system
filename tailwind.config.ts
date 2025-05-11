@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -25,12 +26,12 @@ export default {
 				background: 'hsl(var(--background))',
 				foreground: 'hsl(var(--foreground))',
 				primary: {
-					DEFAULT: 'hsl(var(--primary))',
-					foreground: 'hsl(var(--primary-foreground))'
+					DEFAULT: '#00529b', // azul forte institucional
+					foreground: '#ffffff'
 				},
 				secondary: {
-					DEFAULT: 'hsl(var(--secondary))',
-					foreground: 'hsl(var(--secondary-foreground))'
+					DEFAULT: '#fcbd1f', // amarelo alaranjado
+					foreground: '#1c1c1c'
 				},
 				destructive: {
 					DEFAULT: 'hsl(var(--destructive))',
@@ -89,7 +90,13 @@ export default {
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
 				'accordion-up': 'accordion-up 0.2s ease-out'
-			}
+			},
+			backgroundColor: {
+				'page-bg': '#f8f9fa',
+			},
+			textColor: {
+				'body': '#1c1c1c',
+			},
 		}
 	},
 	plugins: [require("tailwindcss-animate")],
